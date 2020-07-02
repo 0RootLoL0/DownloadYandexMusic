@@ -13,7 +13,7 @@ args = parser.parse_args()
 client = Client.from_credentials(args.user, args.pasw)
 tracklist = client.users_likes_tracks()
 
-bar = IncrementalBar('Моя музыка', max = len(tracklist.tracks))
+bar = IncrementalBar('my music', max = len(tracklist.tracks))
 
 def down(w, filename):
     try:
